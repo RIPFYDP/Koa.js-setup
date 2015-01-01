@@ -5,6 +5,8 @@
   "devDependencies": {
     "co-supertest": "0.0.7",
     "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0",
+    "gulp-mocha-co": "^0.4.1-co.3",
     "mocha": "^2.1.0",
     "supertest": "^0.15.0"
   }

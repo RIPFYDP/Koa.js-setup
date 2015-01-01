@@ -17,4 +17,12 @@
 
 `$ mocha --harmony`
 
+Or using gulp
+
+`$ gulp test`
+
+## Using gulp-mocha-co
+
+Run `$ alias gulp='node --harmony `which gulp`'`
+
 Follow the [node style guide](https://github.com/felixge/node-style-guide).
