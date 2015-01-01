@@ -17,12 +17,14 @@
 
 `$ mocha --harmony`
 
-Or using gulp
+Or using gulp, create the alias below
 
 `$ gulp test`
 
 ## Using gulp-mocha-co
 
-Run `$ alias gulp='node --harmony `which gulp`'`
+We need to create an alias using the command below.
+
+    $ alias gulp='node --harmony `which gulp`'
 
 Follow the [node style guide](https://github.com/felixge/node-style-guide).
