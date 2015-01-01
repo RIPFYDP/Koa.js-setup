@@ -7,9 +7,14 @@
 5. Create package.json file. `$ echo {} > package.json`
 6. Install koa.js `$ npm install koa`
 7. Install gulp globally `$ sudo npm install --global gulp`
+8. Install mocha globally `$ sudo npm install --global mocha`
 
 ## To run the server
 
 `$ node --harmony server.js`
+
+## To run mocha tests
+
+`$ mocha --harmony`
 
 Follow the [node style guide](https://github.com/felixge/node-style-guide).
