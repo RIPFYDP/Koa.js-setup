@@ -6,6 +6,7 @@
 4. Install the latest node.js that's higher than **0.11.13**. `$ sudo n latest`
 5. Create package.json file. `$ echo {} > package.json`
 6. Install koa.js `$ npm install koa`
+7. Install gulp globally `$ sudo npm install --global gulp`
 
 ## To run the server
 

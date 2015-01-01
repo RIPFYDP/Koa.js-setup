@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "koa": "^0.14.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10"
   }
 }
