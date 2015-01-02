@@ -13,6 +13,8 @@
 
 `$ node --harmony server.js`
 
+The server runs on port 5000, so go to [http://localhost:5000/v0](http://localhost:5000/v0).
+
 ## To run mocha tests
 
 `$ mocha --harmony`

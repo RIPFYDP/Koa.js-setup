@@ -1,5 +1,5 @@
-var gulp = require('gulp');
-var mocha = require('gulp-mocha-co');
+var gulp  = require('gulp'),
+    mocha = require('gulp-mocha-co');
 
 gulp.task('default', function() {
   // place code for your default task here
