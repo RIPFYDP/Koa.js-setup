@@ -1,12 +1,16 @@
-var koa    = require('koa'),
-    mount  = require('koa-mount'),
-    Router = require('koa-router'),
-    logger = require('koa-logger');
+var koa          = require('koa'),
+    mount        = require('koa-mount'),
+    Router       = require('koa-router'),
+    responseTime = require('koa-response-time'),
+    logger       = require('koa-logger');
 
 var app = module.exports = koa();
 
 // logging
 app.use(logger());
+
+// x-response-time
+app.use(responseTime());
 
 // API versioning and routing
 var APIv0 = new Router();
