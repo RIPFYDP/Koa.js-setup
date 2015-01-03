@@ -30,3 +30,11 @@ We need to create an alias using the command below.
     $ alias gulp='node --harmony `which gulp`'
 
 Follow the [node style guide](https://github.com/felixge/node-style-guide).
+
+## Using mongodb
+
+In another terminal, run
+
+`$ mongod`
+
+Make sure this runs.
