@@ -9,14 +9,14 @@ gulp.task('default', function() {});
 gulp.task('server', ['nodemon']);
 
 gulp.task('test-once', function() {
-  return gulp.src('test/tests.js', {read: false})
+  return gulp.src('test/*/*.js', {read: false})
     .pipe(mocha({reporter: 'nyan'}))
     .pipe(exit());
 });
 
 gulp.task('nodemon', function() {
   nodemon({
-    script: 'server.js',
+    script: 'index.js',
     nodeArgs: ['--harmony']
   }).on('restart');
 });
