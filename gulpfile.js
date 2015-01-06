@@ -1,14 +1,22 @@
-var gulp  = require('gulp'),
-    mocha = require('gulp-mocha-co');
+var gulp    = require('gulp'),
+    mocha   = require('gulp-mocha-co'),
+    nodemon = require('gulp-nodemon'),
+    exit    = require('gulp-exit');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulp.task('default', function() {});
 
-gulp.task('test', function() {
+// Start server using live-reloading
+gulp.task('server', ['nodemon']);
+
+gulp.task('test-once', function() {
   return gulp.src('test/tests.js', {read: false})
     .pipe(mocha({reporter: 'nyan'}))
-    .once('end', function () {
-      process.exit();
-    });
+    .pipe(exit());
+});
+
+gulp.task('nodemon', function() {
+  nodemon({
+    script: 'server.js',
+    nodeArgs: ['--harmony']
+  }).on('restart');
 });
