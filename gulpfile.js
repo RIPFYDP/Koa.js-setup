@@ -9,7 +9,7 @@ gulp.task('default', function() {});
 gulp.task('server', ['nodemon']);
 
 gulp.task('test-once', function() {
-  return gulp.src('test/*/*.js', {read: false})
+  return gulp.src('test/lib/**/*.js', {read: false})
     .pipe(mocha({reporter: 'nyan'}))
     .pipe(exit());
 });
