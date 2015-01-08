@@ -13,7 +13,7 @@ module.exports = app;
 var env = process.env.NODE_ENV || 'development';
 
 // Set environment configs
-app['config'] = application(env);
+app.config = application(env);
 
 // Set mongodb connection
 mongo.setMongo(app);
