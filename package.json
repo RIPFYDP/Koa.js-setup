@@ -15,10 +15,12 @@
     "faker": "^2.1.2",
     "gulp": "^3.8.10",
     "gulp-exit": "0.0.2",
+    "gulp-jshint": "^1.9.0",
     "gulp-mocha": "^2.0.0",
     "gulp-mocha-co": "^0.4.1-co.3",
     "gulp-nodemon": "^1.0.4",
     "jake": "^8.0.10",
+    "jshint-stylish": "^1.0.0",
     "mocha": "^2.1.0",
     "supertest": "^0.15.0"
   },

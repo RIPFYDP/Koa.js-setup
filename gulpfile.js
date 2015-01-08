@@ -1,7 +1,9 @@
 var gulp    = require('gulp'),
     mocha   = require('gulp-mocha-co'),
     nodemon = require('gulp-nodemon'),
-    exit    = require('gulp-exit');
+    exit    = require('gulp-exit'),
+    jshint  = require('gulp-jshint'),
+    stylish = require('jshint-stylish');
 
 gulp.task('default', function() {});
 
@@ -19,4 +21,10 @@ gulp.task('nodemon', function() {
     script: 'index.js',
     nodeArgs: ['--harmony']
   }).on('restart');
+});
+
+gulp.task('lint', function() {
+  return gulp.src(['./index.js', './lib/**/*.js'])
+  .pipe(jshint())
+  .pipe(jshint.reporter(stylish));
 });
