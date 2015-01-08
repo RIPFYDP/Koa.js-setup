@@ -30,7 +30,7 @@ var APIv0 = new Router();
 APIv0.get('/', function *(){
   this.body = 'Hello from koajs';
 });
-APIv0.get('/mongo', mongo.testData);
+APIv0.get('/mongo', mongo.users);
 
 app.use(mount('/v0', APIv0.middleware()));
 

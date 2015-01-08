@@ -32,6 +32,54 @@ In another terminal, run
 
 Make sure this runs.
 
+## Jake tasks
+
+`Jake` is what `rake` is to the nodejs world.
+Write tasks like dropping database and populating database in `jakelib` folder.
+
+To dropping database
+
+`$ jake db:drop`
+
+To seed database with 100 fake users
+
+`$ jake db:seed`
+
+More on [jake](http://jakejs.com/docs).
+
+## Project dir structure
+
+To get this cool thing,
+
+```
+$ brew install tree
+$ tree -I node_modules
+```
+
+```
+.
+├── Procfile
+├── README.md
+├── gulpfile.js
+├── index.js
+├── jakelib
+│   └── database.jake
+├── lib
+│   ├── config
+│   │   ├── application.js
+│   │   └── config.js
+│   └── db
+│       └── mongo.js
+├── npm-debug.log
+├── package.json
+└── test
+├── lib
+│   ├── config
+│   │   └── config.js
+│   └── server.js
+└── test.conf.js
+```
+
 ## Useful links
 
 - [koa.js screencasts](http://knowthen.com/)
