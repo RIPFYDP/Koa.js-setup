@@ -70,7 +70,6 @@ $ tree -I node_modules
 │   │   └── config.js
 │   └── db
 │       └── mongo.js
-├── npm-debug.log
 ├── package.json
 └── test
 ├── lib

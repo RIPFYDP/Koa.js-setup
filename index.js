@@ -3,8 +3,10 @@ var koa          = require('koa'),
     Router       = require('koa-router'),
     responseTime = require('koa-response-time'),
     logger       = require('koa-logger'),
+    redisModule  = require('redis'),
     application  = require('./lib/config/application'),
     mongo        = require('./lib/db/mongo'),
+    redis        = require('./lib/db/redis'),
     app          = koa();
 
 module.exports = app;
@@ -31,6 +33,13 @@ APIv0.get('/', function *(){
   this.body = 'Hello from koajs';
 });
 APIv0.get('/mongo', mongo.users);
+APIv0.get('/redis', function *(){
+  redis.set("string key", "string val", redisModule.print);
+  redis.get("string key", function(err, reply) {
+    console.log(reply);
+  });
+  this.body = 'Looks like redis is working';
+});
 
 app.use(mount('/v0', APIv0.middleware()));
 

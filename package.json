@@ -8,7 +8,8 @@
     "koa-response-time": "^1.0.2",
     "koa-router": "^3.8.0",
     "mongodb": "^2.0.12",
-    "monk": "^0.9.1"
+    "monk": "^0.9.1",
+    "redis": "^0.12.1"
   },
   "devDependencies": {
     "co-supertest": "0.0.7",
